@@ -1,6 +1,8 @@
-package org.example;
+package org.example.solution;
 
-import java.util.Collection;
+import org.example.util.Runner;
+import org.example.util.Util;
+
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
@@ -8,9 +10,11 @@ import java.util.List;
 public class Day01 implements Runner {
 
 
+    private static final String INPUT_FILE_PATH = "src/main/resources/day_01/advent_code_day_01_input.txt";
+
     @Override
     public void run() {
-        List<String> result = Util.readFileToString("src/main/resources/day_01/advent_code_day_01_input_01.txt");
+        List<String> result = Util.readFileToString(INPUT_FILE_PATH);
 
         Util.log(Util.LogLevel.INFO, String.format("Result is : %s", result));
 

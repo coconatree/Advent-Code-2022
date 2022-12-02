@@ -1,4 +1,4 @@
-package org.example;
+package org.example.util;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -9,7 +9,7 @@ import java.util.List;
 
 public class Util {
 
-    enum LogLevel {
+    public enum LogLevel {
         WARN,
         INFO,
         ERROR;
